@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<table id='headerTable'>]]>
+    </line>
+    <line>
+      <![CDATA[<table border=1px; style= width:100%;color=#808080;body bgcolor=#F5DEB3><tr align=center><th width=15% >Login Page</th></tr></table>]]>
+    </line>
+    <line>
+      <![CDATA[<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr>]]>
+    </line>
+    <line>
+      <![CDATA[<tr id=Login & Homepage><td width=15%>Login & Homepage</td><td width=15%>Verify user login</td><td width=15%>ss88593
+********</td><td width=15%>User should redirect to homepage</td><td width=15%>User logged-in successfully</td><TD align=center BGCOLOR= #00ff00 > Pass</td>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2018-08-13T17:05:51Z" name="Default suite" finished-at="2018-08-13T17:06:57Z" duration-ms="65629">
+    <groups>
+    </groups>
+    <test started-at="2018-08-13T17:05:51Z" name="Default test" finished-at="2018-08-13T17:06:57Z" duration-ms="65629">
+      <class name="com.deere.Helpers.Invoke">
+        <test-method is-config="true" signature="systemConfigSetup()[pri:0, instance:com.deere.Helpers.Invoke@c03cf28]" started-at="2018-08-13T22:35:51Z" name="systemConfigSetup" finished-at="2018-08-13T22:36:32Z" duration-ms="40540" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<table id='headerTable'>]]>
+            </line>
+            <line>
+              <![CDATA[<table border=1px; style= width:100%;color=#808080;body bgcolor=#F5DEB3><tr align=center><th width=15% >Login Page</th></tr></table>]]>
+            </line>
+            <line>
+              <![CDATA[<table border=1px; style= width:100%;color=#808080>  <tr font-family:Georgia, Garamond, Serif><th width=2%;body bgcolor=#BDBDBD>Testcase ID</th> <th width=20%;body bgcolor=#BDBDBD>Testcase Description</th> <th width=20%;body bgcolor=#BDBDBD>Input Value</th> <th width=20%;body bgcolor=#BDBDBD>Expected Value</th> <th width=20% ;body bgcolor=#BDBDBD>Actual Value</th> <th width=18% ;body bgcolor=#BDBDBD>Result</th></tr>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- systemConfigSetup -->
+        <test-method signature="invokeUserCredentials()[pri:0, instance:com.deere.Helpers.Invoke@c03cf28]" started-at="2018-08-13T22:36:32Z" name="invokeUserCredentials" finished-at="2018-08-13T22:36:55Z" duration-ms="23366" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to click on Admin utility link or Element not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to click on Admin utility link or Element not found
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.deere.Helpers.GenericFactory.utilityMenuAdminClick(GenericFactory.java:208)
+	at com.deere.Helpers.Invoke.invokeUserCredentials(Invoke.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<tr id=Login & Homepage><td width=15%>Login & Homepage</td><td width=15%>Verify user login</td><td width=15%>ss88593
+********</td><td width=15%>User should redirect to homepage</td><td width=15%>User logged-in successfully</td><TD align=center BGCOLOR= #00ff00 > Pass</td>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invokeUserCredentials -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.deere.Helpers.Invoke@c03cf28]" started-at="2018-08-13T22:36:55Z" name="closeDriver" finished-at="2018-08-13T22:36:57Z" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.deere.Helpers.Invoke -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
